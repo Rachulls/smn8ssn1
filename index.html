@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <div class="container" mt-3>
+        <div>
+            <h2>¿Qué son los frameworks?</h2>
+            <p>Es una estructura de trabajo en la programación para desarrollar apps, webs de forma más eficiente y
+                rápida.
+            </p>
+        </div>
+
+        <div>
+            <h2>¿Que es Bootstrap CSS?</h2>
+            <p>Es un framework que ayuda a que el desarrollo web sea más fluido, ya que proporciona plantillas que
+                cualquiera puede usar y de manera grtatuita.</p>
+        </div>
+
+        <div>
+            <h2>Maneras de agregar Bootstrap a un proyecto.</h2>
+            <p>La forma más rápida sería mediante enlaces CDN, que se puedes copiar en la página principal de Bootstrap.
+            </p>
+            <p>Otra forma sería descargando los archivos de Bootstrap e incluirlos en una carpeta y cargarlos en un
+                archivo
+                HTML.</p>
+        </div>
+
+        <div>
+            <h2>¿Qué son los breackpoints de bootstrap?</h2>
+            <p>Son medidas para controlar cuando queremos adaptar nuestra maquetacion a diversos tamaños.</p>
+            <p>Extra extra grande : xxl : >=1400px</p>
+            <p>Extra grande : xl : >=1200px</p>
+            <p>Grande : lg : >=992px</p>
+            <p>Medio : md : >=768px</p>
+            <p>Pequeño : sm : >=576px</p>
+            <p>Extra pequeño : Ninguno : <576px< /p>
+        </div>
+
+        <div>
+            <h2>Containers de Bootstrap</h2>
+            <p>Son contenedores flexibles que van a cambiar de tamaño según los breackpoints que se le pasen.</p>
+            <div class="container">
+                <div class="father">
+                    <div class="child">Hijo 1</div>
+                    <div class="child">Hijo 2</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Grillas de Bootstrap</h2>
+            <p>Es un sistema de cuadriculas, donde se usan filas y columnas para alinear y ordenar el contenido. El
+                número
+                de columnas del contenedor a respetar es de 12.</p>
+            <p>Extra extra grande : col-xxl- : >=1400px</p>
+            <p>Extra grande : col-xl- : >=1200px</p>
+            <p>Grande : col-lg- : >=992px</p>
+            <p>Medio : col-md- : >=768px</p>
+            <p>Pequeño : col-sm- : >=576px</p>
+            <p>Extra pequeño : col-xs- : <576px </p>
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col">
+                                1 of 2
+                            </div>
+                            <div class="col">
+                                2 of 2
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                1 of 3
+                            </div>
+                            <div class="col">
+                                2 of 3
+                            </div>
+                            <div class="col">
+                                3 of 3
+                            </div>
+                        </div>
+                    </div>
+        </div>
+
+        <div>
+            <h2>Utilities de Bootstrap</h2>
+            <p>Se generan con una API y se usa para modificar un predeterminado conjunto de clases usando SASS.</p>
+            <p>Para usarlos primero se puede descargar la biblioteca de Bootstrap o usar un CDN, como ya se mencionó.
+            </p>
+            <p>Apartir de ello se puedes utilizar las clases de utilities directamente en el HTML.</p>
+            <div class="container">
+                <h1 class="text-center">Ejemplo de Utilities de Bootstrap</h1>
+
+                <div class="alert alert-success">
+                    Este es un mensaje de éxito.
+                </div>
+
+                <p class="text-muted">Este es un texto con color gris.</p>
+
+                <div class="m-3 p-2 bg-info text-white">
+                    Margen, padding, y fondo de color.
+                </div>
+            </div>
+
+            <div>
+                <h2>Componentes de Bootstrap</h2>
+                <p>Los componentes facilitan el desarrollo de diferentes interfaces web responsivas.</p>
+                <p>Hay una lista larga de componentes, entre ellos: Acordeones, botones, tarjetas, modales, barras de
+                    navegacion, paginacion, etc.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Ingrese su correo">
+                        <small id="emailHelp" class="form-text text-muted">No compartiremos su correo con nadie
+                            más.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                </form>
+                <button type="button" class="btn btn-primary mt-3">Botón Primario</button>
+                <br>
+                <button type="button" class="btn btn-secondary mt-2">Botón Secundario</button>
+
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
